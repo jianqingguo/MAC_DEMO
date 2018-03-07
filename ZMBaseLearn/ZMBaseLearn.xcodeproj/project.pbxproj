@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AAFA576DD5B26DFA71B0758 /* libPods-ZMBaseLearn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19FA69BF1AA8862B2CAA611E /* libPods-ZMBaseLearn.a */; };
 		D3A02A7C204EEE6D002C5C07 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A02A7B204EEE6D002C5C07 /* AppDelegate.m */; };
 		D3A02A7E204EEE6D002C5C07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3A02A7D204EEE6D002C5C07 /* Assets.xcassets */; };
 		D3A02A81204EEE6E002C5C07 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3A02A7F204EEE6E002C5C07 /* MainMenu.xib */; };
@@ -14,6 +15,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		19FA69BF1AA8862B2CAA611E /* libPods-ZMBaseLearn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZMBaseLearn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D71B8067FD949761AD0DD36 /* Pods-ZMBaseLearn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMBaseLearn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZMBaseLearn/Pods-ZMBaseLearn.debug.xcconfig"; sourceTree = "<group>"; };
+		BFB3825374E64392F4BEF7F7 /* Pods-ZMBaseLearn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZMBaseLearn.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZMBaseLearn/Pods-ZMBaseLearn.release.xcconfig"; sourceTree = "<group>"; };
 		D3A02A77204EEE6D002C5C07 /* ZMBaseLearn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZMBaseLearn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3A02A7A204EEE6D002C5C07 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D3A02A7B204EEE6D002C5C07 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -29,17 +33,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7AAFA576DD5B26DFA71B0758 /* libPods-ZMBaseLearn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68241A8AEC6197D393E40D1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				19FA69BF1AA8862B2CAA611E /* libPods-ZMBaseLearn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D3A02A6E204EEE6D002C5C07 = {
 			isa = PBXGroup;
 			children = (
 				D3A02A79204EEE6D002C5C07 /* ZMBaseLearn */,
 				D3A02A78204EEE6D002C5C07 /* Products */,
+				FA736094D7E381C317988DC5 /* Pods */,
+				68241A8AEC6197D393E40D1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +80,15 @@
 			path = ZMBaseLearn;
 			sourceTree = "<group>";
 		};
+		FA736094D7E381C317988DC5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9D71B8067FD949761AD0DD36 /* Pods-ZMBaseLearn.debug.xcconfig */,
+				BFB3825374E64392F4BEF7F7 /* Pods-ZMBaseLearn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -72,9 +96,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D3A02A88204EEE6E002C5C07 /* Build configuration list for PBXNativeTarget "ZMBaseLearn" */;
 			buildPhases = (
+				92CF4D8AB519E48C1C00F36D /* [CP] Check Pods Manifest.lock */,
 				D3A02A73204EEE6D002C5C07 /* Sources */,
 				D3A02A74204EEE6D002C5C07 /* Frameworks */,
 				D3A02A75204EEE6D002C5C07 /* Resources */,
+				DD56B0835AF806684AB57DDC /* [CP] Embed Pods Frameworks */,
+				DC00DDE9EB3FBC43B6C8E18C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,57 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		92CF4D8AB519E48C1C00F36D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZMBaseLearn-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC00DDE9EB3FBC43B6C8E18C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZMBaseLearn/Pods-ZMBaseLearn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD56B0835AF806684AB57DDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZMBaseLearn/Pods-ZMBaseLearn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D3A02A73204EEE6D002C5C07 /* Sources */ = {
@@ -259,6 +337,7 @@
 		};
 		D3A02A89204EEE6E002C5C07 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9D71B8067FD949761AD0DD36 /* Pods-ZMBaseLearn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZMBaseLearn/ZMBaseLearn.entitlements;
@@ -268,11 +347,13 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zm.ZMBaseLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Debug;
 		};
 		D3A02A8A204EEE6E002C5C07 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFB3825374E64392F4BEF7F7 /* Pods-ZMBaseLearn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ZMBaseLearn/ZMBaseLearn.entitlements;
@@ -282,6 +363,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zm.ZMBaseLearn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/**";
 			};
 			name = Release;
 		};

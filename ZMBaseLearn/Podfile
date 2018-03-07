@@ -1,0 +1,7 @@
+platform :macos
+
+pod 'JSONKit',       '~> 1.4'
+
+pod 'AFNetworking'
+
+target 'ZMBaseLearn'
